@@ -9,8 +9,24 @@ jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      
+      - uses: actions/checkout@v4
+      # 2. Git Safe Directory 설정 (중요!)
+      - name: Fix Git Ownership Issue
+        run: |
+          git config --global --add safe.directory /github/workspace
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"  # 이중 확인용
+
+          # 3. Jekyll 빌드 실행
+      - name: Build Jekyll Site
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: .
+          destination: ./_site
+          future: false
+          build_revision: ${{ github.sha }}
+          verbose: true
+          token: ${{ secrets.GITHUB_TOKEN }}  # 올바른 토큰 사용 확인
+          
       # Use GitHub Actions' cache to cache dependencies on servers
       - uses: actions/cache@v1
         with:

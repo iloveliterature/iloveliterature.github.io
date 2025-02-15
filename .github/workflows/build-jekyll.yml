@@ -1,7 +1,5 @@
 name: Github Pages
 
-- name: Fix Git safe directory issue
-run: git config --global --add safe.directory /github/workspace
 on:
   push:
     branches:

@@ -1,5 +1,7 @@
 name: Github Pages
 
+run: git config --global --add safe.directory /github/workspace
+
 on:
   push:
     branches:

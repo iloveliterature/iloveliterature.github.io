@@ -12,7 +12,23 @@ jobs:
       - uses: actions/checkout@v4
 
       -run: git config --global --add safe.directory '*'
-          
+
+            # Ruby 및 Jekyll 설정
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.1.2  # GitHub Pages 호환 버전
+
+      # 의존성 설치
+      - name: Install Bundler & Gems
+        run: |
+          gem install bundler -v 2.4.22
+          bundle install --retry=3 --jobs=4
+
+      # SCSS 빌드 검증 (선택적)
+      - name: Validate SCSS
+        run: bundle exec sass --style=compressed assets/css/main.scss
+
       # Use GitHub Actions' cache to cache dependencies on servers
       - uses: actions/cache@v1
         with:

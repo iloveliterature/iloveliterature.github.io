@@ -1,7 +1,5 @@
 name: Github Pages
 
-run: git config --global --add safe.directory /github/workspace
-
 on:
   push:
     branches:
@@ -33,3 +31,6 @@ jobs:
           jekyll_baseurl: '/jekyll-theme-yat'  # Default is empty
           cname: ''                  # Default is to not use a cname
           actor: ''                  # Default is the GITHUB_ACTOR
+          
+      - name: Fix Git safe directory issue
+         run: git config --global --add safe.directory /github/workspace

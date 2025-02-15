@@ -9,33 +9,9 @@ jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      with:
-          persist-credentials: false  # 권한 충돌 방지
-          fetch-depth: 0              # 전체 커밋 히스토리 로드
+      - uses: actions/checkout@v4
 
-      # 2. Git Safe Directory 강제 설정 (3중 보험)
-      - name: Fix Ownership
-        run: |
-          # 1) 전역 설정 (runner 사용자)
-          git config --global --add safe.directory /github/workspace
-          # 2) 시스템 전체 설정 (root 권한)
-          sudo git config --system --add safe.directory /github/workspace
-          # 3) GitHub 워크스페이스 환경 변수 사용
-          git config --global --add safe.directory "$GITHUB_WORKSPACE"
-
-      # 3. Jekyll 빌드 단계 (Git 설정 강제 주입)
-      - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
-        env:
-          GIT_CONFIG_GLOBAL: "/home/runner/.gitconfig"  # 전역 설정 경로 명시
-        with:
-          source: .
-          destination: ./_site
-          future: false
-          build_revision: ${{ github.sha }}  # 하드코딩 대신 동적 SHA 사용
-          verbose: true
-          token: ${{ secrets.GITHUB_TOKEN }}
+      -run: git config --global --add safe.directory '*'
           
       # Use GitHub Actions' cache to cache dependencies on servers
       - uses: actions/cache@v1

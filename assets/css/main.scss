@@ -79,4 +79,11 @@ $selection-background-color: unquote("{{ site.selection.background_color }}");
   }
 }
 
+@import "{{ site.theme }}";
+
+/* Case 1: border-bottom로 구현된 경우 */
+nav {
+  border-bottom: 2px solid #원하는색상코드 !important;
+}
+
 @import "yat";

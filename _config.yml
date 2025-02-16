@@ -43,9 +43,6 @@ site_logo: "/assets/images/logo.jpeg" #로고 이미지 설정
 #   "Copyright © 2017-2021 Foobar"
 #
 
-liquid:
-  error_mode: strict
-  
 copyright: "All Rights Reserved"
 
 description: >- # this means to ignore newlines until "baseurl:"

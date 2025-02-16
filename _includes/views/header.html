@@ -32,11 +32,6 @@
             </span>
           </label>
 
-          <div class="logo-container">
-    <a href="/" class="site-logo">
-      <img src="{{ '/assets/images/logo.jpeg' | relative_url }}" alt="Logo">
-    </a>
-  </div>
           <div class="trigger">
             {%- for path in page_paths -%}
               {%- assign my_page = site.pages | where: "path", path | first -%}

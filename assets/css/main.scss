@@ -79,17 +79,4 @@ $selection-background-color: unquote("{{ site.selection.background_color }}");
   }
 }
 
-.navbar {
-  box-shadow: 0 1px 2px #ffffff !important;
-}
-
-/* Case 3: 특정 클래스가 있는 경우 (예: .nav-links) */
-.nav-links {
-  border-bottom: 1px solid #ffffff !important;
-}
-
-/* Case 4: 링크 항목 하단 라인 (호버 효과 등) */
-.nav-item a:hover {
-  border-bottom: 2px solid #ffffff !important;
-}
 @import "yat";

@@ -28,7 +28,7 @@ title:
 email: seonhae_min@snu.ac.kr
 author: GitHub User
 
-logo: "/assets/images/logo.jepg" #로고 이미지 설정
+site_logo: "/assets/images/logo.jpeg" #로고 이미지 설정
 
 # Copyright setting
 # You can use any html code, currently below placeholders are available:

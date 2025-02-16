@@ -11,13 +11,7 @@
 {%- endif -%}
 
 <header class="site-header {{ header_transparent_class }}" role="banner">
-<a class="site-logo" href="{{ site.url }}">
-  <img 
-    src="{{ site.logo | default: '/assets/images/logo.jpeg' }}" 
-    alt="{{ site.logo_alt | default: 'Logo' }}"
-    class="logo-image"
-  >
-</a>
+
   <div class="wrapper">
     <div class="site-header-inner">
       {%- assign default_paths = site.pages | where: "dir", "/" | map: "path" -%}
@@ -26,7 +20,13 @@
       <span class="site-brand">
         {%- include views/site-brand.html -%}
       </span>
-
+<a class="site-logo" href="{{ site.url }}">
+  <img 
+    src="{{ site.logo | default: '/assets/images/logo.jpeg' }}" 
+    alt="{{ site.logo_alt | default: 'Logo' }}"
+    class="logo-image"
+  >
+</a>
       {%- if page_paths -%}
         <nav class="site-nav">
           <input type="checkbox" id="nav-trigger" class="nav-trigger" />

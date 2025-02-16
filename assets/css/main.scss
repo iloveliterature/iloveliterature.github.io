@@ -30,11 +30,6 @@ $brand-color: map-get($brand-colors, "orangered");
 .site-header nav a {
   color: #000000 !important; /* 원하는 색상으로 변경 */
 }
-/* 또는 구분선이 다른 요소라면 */
-.header-bar {
-  background-color: #fff !important;
-}
-
 .site-logo {
   color: #000000 !important; /* 원하는 색상으로 변경 */
 }

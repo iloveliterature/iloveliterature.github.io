@@ -80,7 +80,7 @@ $selection-background-color: unquote("{{ site.selection.background_color }}");
 }
 
 .navbar {
-  box-shadow: 0 1px 2px rgba(#원하는색상코드, 0.1) !important;
+  box-shadow: 0 1px 2px rgba(0,0,0,0) !important;
 }
 
 @import "yat";

@@ -81,7 +81,10 @@ $selection-background-color: unquote("{{ site.selection.background_color }}");
 .site-nav a { font-family: 'Black Han Sans', sans-serif; }
 
 .subheading {
-    text-align: center;
+    text-align: center; /* subheading만 가운데 정렬 */
+    width: 100%;
+    margin: 0 auto; /* 가운데 정렬 유지 */
+    display: block;
 }
 
 @import "yat";

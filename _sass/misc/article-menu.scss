@@ -43,7 +43,7 @@
       }
 
       .active {
-        background-color: $active-bgcolor;
+        background-color: #FFFFFF /*$active-bgcolor*/;
         transition: background 0.5s;
         border-left: 2px solid #202020;
         margin-left: -2px;

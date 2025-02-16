@@ -77,6 +77,10 @@ $on-laptop:        800px !default;
   }
 }
 
+.header-bar {
+  background-color: #ffffff !important; /* 배경색을 흰색으로 설정 */
+}
+
 // Import partials.
 @import
   "yat/base",

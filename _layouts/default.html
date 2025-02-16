@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
-
+  
+<header>
+  <h1>{{ site.home.heading | newline_to_br }}</h1>
+</header>
+  
   {%- include head.html -%}
 
   <body>

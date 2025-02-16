@@ -1,6 +1,9 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
+.logo {
+  color: #000000; /* 텍스트 색상 설정 */
+}
 
 // Default theme colors
 $theme-colors: (

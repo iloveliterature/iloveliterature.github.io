@@ -17,7 +17,7 @@
     ul {
       border-left: 1px solid #e9ecef;
       $indent: divide($base-font-size, 4);
-      $active-bgcolor: #ecebec;
+      $active-bgcolor: #000000;
 
       @for $i from 2 to 7 {
         .h-h#{$i} {
@@ -43,7 +43,7 @@
       }
 
       .active {
-        background-color: #FFFFFF /*$active-bgcolor*/;
+        background-color: $active-bgcolor;
         transition: background 0.5s;
         border-left: 2px solid #202020;
         margin-left: -2px;

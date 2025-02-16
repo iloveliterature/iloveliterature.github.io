@@ -28,7 +28,7 @@ $brand-color: map-get($brand-colors, "orangered");
 }
 
 .site-header nav a {
-  color: #FF0000 !important; /* 원하는 색상으로 변경 */
+  color: #000000 !important; /* 원하는 색상으로 변경 */
 }
 
 @if map-has-key($brand-colors, $brand-name) {

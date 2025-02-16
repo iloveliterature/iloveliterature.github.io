@@ -162,12 +162,12 @@ header_pages:
    - index.html
 
 # Page default value
- defaults:
-   home:
-  heading: |
-    선혜 닷컴
-    돌봄의 시작
-  subheading: ""
+# defaults:
+#   home:
+#  heading: |
+#    선혜 닷컴
+#    돌봄의 시작
+#  subheading: ""
 #     subheading: "Your awesome subheading"
 #     banner: "Your image url"
 

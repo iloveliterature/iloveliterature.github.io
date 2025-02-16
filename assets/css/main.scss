@@ -29,6 +29,7 @@ $brand-color: map-get($brand-colors, "orangered");
 
 .site-header nav a {
   color: #000000 !important; /* 원하는 색상으로 변경 */
+  border-bottom: 1px solid #fff;
 }
 
 .site-logo {
@@ -79,5 +80,8 @@ $selection-background-color: unquote("{{ site.selection.background_color }}");
     opacity: 0.8;
   }
 }
+
+@import "{{ site.theme }}";
+
 
 @import "yat";

@@ -61,6 +61,11 @@ $selection-background-color: unquote("{{ site.selection.background_color }}");
 }
 
 /* assets/css/main.scss에 추가 */
+.site-logo img {
+  height: 120px; /* 원하는 크기로 변경 (기본 50px → 80px) */
+  width: auto; /* 가로 비율 자동 조정 */
+}
+
 .logo-image {
   max-height: 120px;  /* 필요 높이 조정 */
   width: auto;

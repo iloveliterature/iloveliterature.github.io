@@ -31,6 +31,10 @@ $brand-color: map-get($brand-colors, "orangered");
   color: #000000 !important; /* 원하는 색상으로 변경 */
 }
 
+.site-logo {
+  color: #000000 !important; /* 원하는 색상으로 변경 */
+}
+
 @if map-has-key($brand-colors, $brand-name) {
   $brand-color: map-get($brand-colors, $brand-name);
 } @else if str-index($brand-name, "#") == 1 {

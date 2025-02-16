@@ -78,5 +78,6 @@ $selection-background-color: unquote("{{ site.selection.background_color }}");
     opacity: 0.8;
   }
 }
+.site-nav a { font-family: 'Black Han Sans', sans-serif; }
 
 @import "yat";

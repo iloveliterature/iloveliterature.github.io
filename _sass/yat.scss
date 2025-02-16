@@ -80,7 +80,12 @@ $on-laptop:        800px !default;
 .header-bar {
   background-color: #ffffff !important; /* 배경색을 흰색으로 설정 */
 }
-
+.subheading {
+    text-align: center; /* subheading만 가운데 정렬 */
+    width: 100%;
+    margin: 0 auto; /* 가운데 정렬 유지 */
+    display: block;
+}
 // Import partials.
 @import
   "yat/base",

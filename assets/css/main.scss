@@ -79,7 +79,7 @@ $selection-background-color: unquote("{{ site.selection.background_color }}");
   }
 }
 
-@import "{{ site.theme }}";
-
-
+.site-header {
+  border-bottom: 1px solid #fff;
+}
 @import "yat";

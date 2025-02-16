@@ -17,9 +17,10 @@
       {%- assign default_paths = site.pages | where: "dir", "/" | map: "path" -%}
       {%- assign page_paths = site.header_pages | default: default_paths -%}
 
-      <span class="site-brand">
+      <!-- <span class="site-brand">
         {%- include views/site-brand.html -%}
-      </span>
+      </span> -->
+      <!-- 네비게이션 메뉴 -->
 
     <a class="site-logo" href="{{ site.url }}">
   <img 

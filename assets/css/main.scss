@@ -80,4 +80,8 @@ $selection-background-color: unquote("{{ site.selection.background_color }}");
 }
 .site-nav a { font-family: 'Black Han Sans', sans-serif; }
 
+.subheading {
+    text-align: center;
+}
+
 @import "yat";

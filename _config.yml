@@ -159,7 +159,7 @@ header_pages:
    - archives.html
    - categories.html
    - tags.html
-   - home.html
+   - index.html
 
 # Page default value
 # defaults:

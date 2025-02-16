@@ -1,11 +1,10 @@
 ---
 layout: articles
 heading: |
-  떠네떠네
-  떠네의 귀환환
+  떠네떠네\n떠네의 귀환
 subheading: ""
 banner: "default"
 ---
-<h1 style="white-space: pre-line;">{{ page.heading }}</h1>
+<h1>{{ page.heading | replace: '\n', '<br>' }}</h1>
 
 {{ content }}

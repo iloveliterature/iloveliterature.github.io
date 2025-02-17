@@ -13,8 +13,9 @@
     {%- endif -%}
 
     {%- if page.categories -%}
-    <span class="post-categories left-vsplit"><i class="fa-solid fa-book"></i> {{ page.categories | escape }}</span>
-  {%- endif -%}
+    {% assign category = page.categories | first %}
+    <span class="post-categories left-vsplit"><i class='fa fa-book'></i> {{ category }}</span>
+    {%- endif -%}
 
 
     {% assign article = page.content %}

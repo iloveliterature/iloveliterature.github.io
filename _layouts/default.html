@@ -2,12 +2,12 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
  
   {%- include head.html -%}
+  {%- include script.html -%}
 
   <body>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet"> 
     {%- include views/header.html -%}
 
-    {% include views/script.html %}
 
     {%- include views/banner.html -%}
 

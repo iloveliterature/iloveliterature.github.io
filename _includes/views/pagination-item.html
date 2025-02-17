@@ -43,7 +43,6 @@
     {% assign category = post.categories | first %}
     <span class="post-categories left-vsplit"><i class='fa fa-book'></i> {{ category }}</span>
     {%- endif -%}
-    <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> {{ reading_time }}</span>
   </div>
   <div class="post-excerpt">
     {%- if post_image and post_image != 'NO_EXCERPT_IMAGE' -%}

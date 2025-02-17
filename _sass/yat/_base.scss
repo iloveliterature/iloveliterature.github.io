@@ -19,9 +19,9 @@ h1 {
  * Basic styling
  */
 body {
-  font-family: $base-font-family;
+  font-family: 'Noto Sans KR', sans-serif;
   font-weight: $base-font-weight;
-  font-size: #{$base-font-size};
+  font-size: #{$base-font-size}*1.5;
   font-display: swap;
   line-height: #{$base-line-height};
   color: $text-color;

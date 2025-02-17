@@ -96,8 +96,10 @@ $selection-background-color: unquote("{{ site.selection.background_color }}");
     z-index: 9999;  /* 다른 요소보다 위로 표시 */
 }
 
-.overlay-wrapper {
-    z-index: 9999;
+.overlay-form.active {
+    top: 0;
+    left: 0;
+    opacity: 1;  /* 활성화되면 보이게 함 */
 }
 
 @import "yat";

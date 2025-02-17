@@ -70,7 +70,7 @@ $selection-background-color: unquote("{{ site.selection.background_color }}");
 }
 
 .logo-image {
-  height: 120px;  /* 필요 높이 조정 */
+  height: 100px;  /* 필요 높이 조정 */
   width: auto;
   transition: opacity 0.3s ease; /* 호버 효과 추가 */
 

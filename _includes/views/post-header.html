@@ -18,8 +18,9 @@
     {{ page.categories.first }}
   {%- else -%}
     {{ page.categories | join: ", " }}
+      </span>
   {%- endif -%}
-</span>
+
 
     {% assign article = page.content %}
     {% assign lang = page.lang %}

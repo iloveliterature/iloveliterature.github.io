@@ -88,7 +88,7 @@ $selection-background-color: unquote("{{ site.selection.background_color }}");
 }
 
 .banner {
-    border-bottom: 2px solid black; /* 두께 3px, 검은색 라인 */
+    border-bottom: 1px solid black; /* 두께 3px, 검은색 라인 */
 }
 
 @import "yat";

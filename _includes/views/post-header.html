@@ -13,12 +13,7 @@
     {%- endif -%}
 
     {%- if page.categories -%}
-    <span class="post-categories left-vsplit"><i class="fa-solid fa-book"></i> 
-  {%- if page.categories.size == 1 -%}
-    {{ page.categories.first }}
-  {%- else -%}
-    {{ page.categories | join: ", " }}
-      </span>
+    <span class="post-categories left-vsplit"><i class="fa-solid fa-book"></i> {{ page.categories | escape }}</span>
   {%- endif -%}
 
 

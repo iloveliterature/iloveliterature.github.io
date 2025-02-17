@@ -13,8 +13,13 @@
     {%- endif -%}
 
     {%- if page.categories -%}
-    <span class="post-categories left-vsplit"><i class='fa fa-book'></i> {{ page.categories | escape }}</span>
-    {%- endif -%}
+    <span class="post-categories left-vsplit"><i class="fa-solid fa-book"></i> 
+  {%- if page.categories.size == 1 -%}
+    {{ page.categories.first }}
+  {%- else -%}
+    {{ page.categories | join: ", " }}
+  {%- endif -%}
+</span>
 
     {% assign article = page.content %}
     {% assign lang = page.lang %}

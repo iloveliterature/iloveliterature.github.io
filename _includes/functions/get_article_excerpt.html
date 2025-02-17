@@ -20,6 +20,8 @@
 {% assign words = return %}
 
 {% assign _article = article | strip_html %}
+{% assign _article_body = _article | remove: site.frontmatter.title %} 
+{% assign _article_body = _article_body | remove: site.frontmatter.author %}
 {% assign _words = _article | size %}
 
 {% assign _size = excerpt_size %}

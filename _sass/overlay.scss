@@ -145,6 +145,8 @@ body.search-overlay {
         z-index: 1;
         top: .6rem;
         right: 1rem;
+        width: 4em;
+        height: 2em;
 
         display: block;
 
@@ -163,6 +165,12 @@ body.search-overlay {
                     transition: all .3s ease-in-out;
         }
     }
+
+  .btn-close:before {
+    content: 'X'; /* 버튼에 'X' 텍스트 추가 */
+    font-size: 20px; /* 글자 크기 */
+    color: white; /* 글자 색상 */
+}
 
     .results {
         position: absolute;

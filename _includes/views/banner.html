@@ -116,10 +116,10 @@
 
           <div class="page-banner-default">
             <h1 class="page-banner-heading">
-              {{ heading | default: page.title | markdownify  }}
+              {{ heading | default: page.title | safe  }}
             </h1>
             <h2 class="page-banner-subheading">
-              {{ subheading | default: page.subtitle | markdownify  }}
+              {{ subheading | default: page.subtitle | safe  }}
             </h2>
           </div>
 

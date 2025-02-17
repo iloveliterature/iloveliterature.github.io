@@ -9,9 +9,9 @@
 <div  class="post-meta">
   {{ post.date | date: date_format }}</span>
 <span class="post-categories left-vsplit"> {{ category }}</span> 
-<span class="post-author"> {{ post.author }}</span>
+<span class="post-author left-vsplit"> {{ post.author }}</span>
 <span>
-  <a class="post-link" href="{{ post.url | relative_url }}">
+  <a class="post-link left-vsplit" href="{{ post.url | relative_url }}">
     {{ post.title | escape }}
     {%- include views/post-badges.html -%}
   </a>

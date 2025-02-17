@@ -91,4 +91,9 @@ $selection-background-color: unquote("{{ site.selection.background_color }}");
     border-bottom: 0.3px solid black; /* 두께 3px, 검은색 라인 */
 }
 
+.btn-search {
+    position: relative;
+    z-index: 9999;  /* 다른 요소보다 위로 표시 */
+}
+
 @import "yat";

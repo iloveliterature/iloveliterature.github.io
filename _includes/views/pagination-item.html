@@ -39,8 +39,8 @@
     {%- if post.author -%}
     <span class="post-author left-vsplit"><i class="fa fa-pencil"></i> {{ post.author | escape }}</span>
     {%- endif -%}
-    {%- if page.categories -%}
-    {% assign category = page.categories | first %}
+    {%- if post.categories -%}
+    {% assign category = post.categories | first %}
     <span class="post-categories left-vsplit"><i class='fa fa-book'></i> {{ category }}</span>
     {%- endif -%}
     <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> {{ reading_time }}</span>

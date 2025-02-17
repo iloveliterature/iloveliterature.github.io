@@ -96,6 +96,10 @@ $selection-background-color: unquote("{{ site.selection.background_color }}");
     z-index: 9999;  /* 다른 요소보다 위로 표시 */
 }
 
+.overlay-wrapper {
+    z-index: 9999;
+}
+
 @import "yat";
 // main.scss 또는 기본 SCSS 파일에 추가
 @import 'overlay';

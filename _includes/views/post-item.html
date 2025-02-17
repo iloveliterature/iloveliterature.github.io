@@ -5,7 +5,10 @@
 {%- assign post = item -%}
 
 {% assign date_format = site.yat.date_format | default: "%b %-d, %Y" %}
+{% assign category = post.categories | first %}
 <span class="post-meta">{{ post.date | date: date_format }}</span>
+<span class="post-categories left-vsplit"> {{ category }}</span> 
+<span class="post-author left-vsplit"> {{ page.author | escape }}</span>
 <span>
   <a class="post-link" href="{{ post.url | relative_url }}">
     {{ post.title | escape }}

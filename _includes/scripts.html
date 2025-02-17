@@ -61,11 +61,12 @@ $(document).ready(function () {
     };
 
     $('.site-header .btn-search').on('click', function () {
-        $('.search-wrapper').css({display: "block"});
-        $(".search-form").addClass('active');
-        $(".search-form").find('input').focus();
-        $("body").addClass('search-overlay');
-    });
+    $('.search-wrapper').addClass('active'); // search-wrapper에 active 추가
+    $('.search-wrapper').css({ display: "block" }); // display: block 스타일 추가
+    $(".search-form").addClass('active');
+    $(".search-form").find('input').focus();
+    $("body").addClass('search-overlay');
+});
 
     $('.nav-global .btn-menu').on('click', function () {
         $('.nav-wrapper').css({display: "block"});

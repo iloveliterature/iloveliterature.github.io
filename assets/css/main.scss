@@ -104,7 +104,6 @@ $selection-background-color: unquote("{{ site.selection.background_color }}");
 
 .search-wrapper .results li {
   display: flex;
-  justify-content: space-between;  /* 제목과 작가/날짜를 양쪽 끝으로 배치 */
   align-items: center;
 }
 
@@ -112,6 +111,7 @@ $selection-background-color: unquote("{{ site.selection.background_color }}");
   margin-left: auto;  /* 오른쪽으로 밀기 */
   font-size: 0.9em;
   color: #777;
+    text-overflow: ellipsis; /* 넘칠 경우 "..."으로 표시 */
 }
 
 .search-wrapper .results li .author {

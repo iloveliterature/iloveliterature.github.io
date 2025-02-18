@@ -115,12 +115,16 @@ $selection-background-color: unquote("{{ site.selection.background_color }}");
 }
 
 .search-wrapper .results li .author {
-  margin-right: 10px; /* 작가 이름과 날짜 사이의 여백 */
+  margin-right: 2px; /* 작가 이름과 날짜 사이의 여백 */
 }
 
 .search-wrapper .results li time {
   display: inline-block; /* 보이게 하도록 display 속성 설정 */
   visibility: visible;   /* 숨겨지지 않도록 */
+  overflow: visible; 
+  font-size: 0.7rem !important;  /* 크기를 적당히 설정 */
+  color: #777  !important;  /* 글자색을 검정색으로 설정 */
+  
 }
 
 @import "yat";

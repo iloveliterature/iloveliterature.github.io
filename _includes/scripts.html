@@ -46,7 +46,7 @@ $(document).ready(function () {
 $(document).ready(function () {
     $('.search-field').simpleJekyllSearch({
       jsonFile: '{{ site.baseurl }}/search.json',
-      template: '<li><a href="{url}" title="{desc}">{title}</a> by <span class="author">{author}</span> <span class="entry-date"><time datetime="{date}">{shortdate}</time></span></li>',
+      template: '<li><a href="{url}" title="{desc}">{title}</a><span class="meta-info"><span class="author">{author}</span> <span class="entry-date"><time datetime="{date}">{shortdate}</time></span></span></li>',
       searchResults: '.search-wrapper .results',
       searchResultsTitle: '<h4>{{ site.data.i18n[site.lang].search_results }}</h4>',
       noResults: '<p>{{ site.data.i18n[site.lang].search_not_found }}</p>'

@@ -54,41 +54,46 @@ $(document).ready(function () {
 });
 
 (function ($, window, undefined) {
+    // closeOverlay 함수 정의: overlay를 숨기고 필요한 클래스를 제거
     var closeOverlay = function () {
-        $('.nav-wrapper, .search-wrapper').removeAttr('style');
+        $('.nav-wrapper, .search-wrapper').fadeOut();  // 애니메이션으로 숨기기
         $(".nav-form, .search-form").removeClass('active');
         $("body").removeClass('nav-overlay search-overlay');
     };
   
-$(document).ready(function() {
-    $('.site-header .btn-search').on('click', function () {
-        $('.search-wrapper').addClass('active'); // search-wrapper에 active 추가
-        $('.search-wrapper').css({ display: "block" }); // display: block 스타일 추가
-        $(".search-form").addClass('active');
-        $(".search-form").find('input').focus();
-        $("body").addClass('search-overlay');
-    });
-});
+    $(document).ready(function() {
+        // search 버튼 클릭 시 overlay 표시
+        $('.site-header .btn-search').on('click', function () {
+            $('.search-wrapper').fadeIn();  // 애니메이션으로 표시
+            $(".search-form").addClass('active');
+            $(".search-form").find('input').focus();
+            $("body").addClass('search-overlay');
+        });
 
+        // menu 버튼 클릭 시 nav-overlay 표시
+        $('.nav-global .btn-menu').on('click', function () {
+            $('.nav-wrapper').fadeIn();  // 애니메이션으로 표시
+            $(".nav-form").addClass('active');
+            $(".nav-form .search-field").prop('disabled', true);
+            $("body").addClass('nav-overlay');
+        });
 
-    $('.nav-global .btn-menu').on('click', function () {
-        $('.nav-wrapper').css({display: "block"});
-        $(".nav-form").addClass('active');
-        $(".nav-form .search-field").prop('disabled', true);
-        $("body").addClass('nav-overlay');
-    });
-
-    $('.nav-wrapper .btn-close, .search-wrapper .btn-close').on('click', function () {
-      let hashValue = $(this).data('hash');
-        closeOverlay();
-    });
-
-    $(document).on('keyup', function (e) {
-        if (e.keyCode === 27) {
+        // close 버튼 클릭 시 overlay 닫기
+        $('.nav-wrapper .btn-close, .search-wrapper .btn-close').on('click', function () {
             closeOverlay();
-        }
+        });
+
+        // ESC 키를 눌렀을 때 overlay 닫기
+        $(document).on('keyup', function (e) {
+            if (e.keyCode === 27) {
+                closeOverlay();
+            }
+        });
     });
+
 })(jQuery, window);
+
+  
 </script>
 
 <script src='//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.js'></script>

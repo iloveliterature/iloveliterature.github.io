@@ -74,6 +74,7 @@ $selection-background-color: unquote("{{ site.selection.background_color }}");
 .logo-image {
   height: 100px;  /* 필요 높이 조정 */
   width: auto;
+  left: -10px; /* 이미지를 헤더의 가장 왼쪽으로 정렬 */
   transition: opacity 0.3s ease; /* 호버 효과 추가 */
 
   &:hover {

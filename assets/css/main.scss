@@ -110,7 +110,7 @@ $selection-background-color: unquote("{{ site.selection.background_color }}");
 .search-wrapper .results li .meta-info {
   margin-left: auto;  /* 오른쪽으로 밀기 */
   font-size: 0.9em;
-  color: #777;
+  color: #fff;
     text-overflow: ellipsis; /* 넘칠 경우 "..."으로 표시 */
 }
 

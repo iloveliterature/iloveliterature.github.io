@@ -102,6 +102,26 @@ $selection-background-color: unquote("{{ site.selection.background_color }}");
     opacity: 1;  /* 활성화되면 보이게 함 */
 }
 
+.search-wrapper .results li {
+  display: flex;
+  justify-content: space-between;  /* 제목과 작가/날짜를 양쪽 끝으로 배치 */
+  align-items: center;
+}
+
+.search-wrapper .results li .meta-info {
+  margin-left: auto;  /* 오른쪽으로 밀기 */
+  font-size: 0.9em;
+  color: #777;
+}
+
+.search-wrapper .results li .author {
+  margin-right: 10px; /* 작가 이름과 날짜 사이의 여백 */
+}
+
+.search-wrapper .results li .entry-date {
+  font-style: italic; /* 날짜에 이탤릭체 적용 */
+}
+
 @import "yat";
 // main.scss 또는 기본 SCSS 파일에 추가
 @import 'overlay';

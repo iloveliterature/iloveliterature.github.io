@@ -5,8 +5,8 @@
     {
       "title"      : "{{ post.title | escape }}",
       "url"        : "{{ post.url }}",
-      "date"       : "{{ post.date | date: '%Y-%m-%d' }}", 
-      "shortdate"  : "{{ post.date | date: '%B %d, %Y' }}",
+      "date": "{{ post.date | date_to_xmlschema }}",  <!-- ISO 8601 형식 -->
+      "shortdate": "{{ post.date | date: site.yat.date_format | default: '%b %-d, %Y' }}"  <!-- 원하는 형식 -->
       "author"     : "{{ post.author | escape }}"
     } {% if forloop.last %}{% else %},{% endif %}
   {% endfor %}

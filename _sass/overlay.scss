@@ -221,3 +221,8 @@ body.search-overlay {
         }
     }
 }
+
+.nav-form .results ul li a,
+.nav-form .results ul li a:hover {
+    text-decoration: none !important;
+}

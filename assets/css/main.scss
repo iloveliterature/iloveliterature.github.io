@@ -102,7 +102,7 @@ $selection-background-color: unquote("{{ site.selection.background_color }}");
 .btn-search i {
   font-size: 18px;   /* 아이콘 크기 조정 */
   color: #333;       /* 아이콘 색상 */
-  transform: translate(30px, 25px) !important; 
+  transform: translate(25px, 20px) !important; 
 }
 
 .btn-search:hover i {

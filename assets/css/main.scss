@@ -122,6 +122,11 @@ $selection-background-color: unquote("{{ site.selection.background_color }}");
   font-style: italic; /* 날짜에 이탤릭체 적용 */
 }
 
+.search-wrapper .results li time {
+  display: inline-block; /* 보이게 하도록 display 속성 설정 */
+  visibility: visible;   /* 숨겨지지 않도록 */
+}
+
 @import "yat";
 // main.scss 또는 기본 SCSS 파일에 추가
 @import 'overlay';

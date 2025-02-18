@@ -120,10 +120,10 @@ $selection-background-color: unquote("{{ site.selection.background_color }}");
 
 .search-wrapper .results li time {
   display: inline-block; /* 보이게 하도록 display 속성 설정 */
-  visibility: visible;   /* 숨겨지지 않도록 */
-  overflow: visible; 
-  font-size: 0.7rem !important;  /* 크기를 적당히 설정 */
-  color: #777  !important;  /* 글자색을 검정색으로 설정 */
+  visibility: visible  !important;   /* 숨겨지지 않도록 */
+  overflow: visible  !important; 
+  font-size: 0.7rem ;  /* 크기를 적당히 설정 */
+  color: #777 ;  /* 글자색을 검정색으로 설정 */
   
 }
 

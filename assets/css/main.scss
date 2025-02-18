@@ -104,7 +104,7 @@ $selection-background-color: unquote("{{ site.selection.background_color }}");
   font-size: 18px;   /* 아이콘 크기 조정 */
   color: #333;       /* 아이콘 색상 */
   transform: translateY(25px) !important; /* 아이콘을 아래로 2px 이동 */
-  transform: translateX(30px); /* 아이콘을 아래로 2px 이동 */
+  transform: translateX(30px) !important; /* 아이콘을 아래로 2px 이동 */
 }
 
 .btn-search:hover i {

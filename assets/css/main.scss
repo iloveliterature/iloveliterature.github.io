@@ -118,10 +118,6 @@ $selection-background-color: unquote("{{ site.selection.background_color }}");
   margin-right: 10px; /* 작가 이름과 날짜 사이의 여백 */
 }
 
-.search-wrapper .results li .entry-date {
-  font-style: italic; /* 날짜에 이탤릭체 적용 */
-}
-
 .search-wrapper .results li time {
   display: inline-block; /* 보이게 하도록 display 속성 설정 */
   visibility: visible;   /* 숨겨지지 않도록 */

@@ -123,7 +123,7 @@ $selection-background-color: unquote("{{ site.selection.background_color }}");
   visibility: visible  !important;   /* 숨겨지지 않도록 */
   overflow: visible  !important; 
   font-size: 0.7rem ;  /* 크기를 적당히 설정 */
-  color: #777 ;  /* 글자색을 검정색으로 설정 */
+  color: #fff ;  /* 글자색을 검정색으로 설정 */
   
 }
 

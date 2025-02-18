@@ -1,5 +1,6 @@
 <script>
   function hashLocate(hashValue) {
+    var element = document.querySelector(hashValue); // 해시 값으로 요소 찾기
     hashValue = hashValue || '';  // null 또는 undefined일 때 빈 문자열로 설정
     hashValue = hashValue.replace(/^.*#h-/, '');
     hashValue = decodeURIComponent(hashValue);

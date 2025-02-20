@@ -249,6 +249,7 @@ header_pages:
 markdown: kramdown
 kramdown:
   input: GFM
+  toc: false
 
 plugins:
   - jekyll-feed
@@ -256,6 +257,4 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-spaceship
-  
-jekyll-toc:
-  enabled: false
+

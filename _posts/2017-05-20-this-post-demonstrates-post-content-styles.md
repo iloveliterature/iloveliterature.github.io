@@ -1,100 +1,48 @@
 ---
 layout: post
-title: "This post demonstrates post content styles"
-categories: junk
-author: "Bart Simpson"
-meta: "Springfield"
+title: "돌봄의 낭만화를 벗어전지는 문학"
+layout: post
+author: 민선혜
+categories: 평론
+banner:
+  image: https://raw.githubusercontent.com/iloveliterature/iloveliterature.github.io/refs/heads/master/assets/images/banners/home.jpeg
+  height: "100vh"
+  min_height: "38vh"
+  heading_style: "font-size: 4.25em;  font-family: 'Black Han Sans', sans-serif;"
+  subheading_style: "color: gold"
+excerpt_image: https://raw.githubusercontent.com/iloveliterature/iloveliterature.github.io/refs/heads/master/assets/images/%EC%96%B4%EB%8A%90_%EB%B0%A4.jpeg
+tags: [여성, 돌봄]
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit.
+<div style="display: flex; ">
+  <span style="text-align: left;"><strong>돌봄의 낭만화를 벗어던지는 문학</strong></span> </div> <br>
+<div style="display: flex; justify-content: flex-end;"> <span>민선혜</span></div> <br>
 
-## Some great heading (h2)
+엄마의 얼굴은 점점 더 크게 부풀어 올랐다. 이내 얼굴만이 아니라 몸--
+layout: post
+title: "돌봄의 낭만화를 벗어전지는 문학"
+layout: post
+author: 민선혜
+categories: 평론
+banner:
+  image: https://raw.githubusercontent.com/iloveliterature/iloveliterature.github.io/refs/heads/master/assets/images/banners/home.jpeg
+  height: "100vh"
+  min_height: "38vh"
+  heading_style: "font-size: 4.25em;  font-family: 'Black Han Sans', sans-serif;"
+  subheading_style: "color: gold"
+excerpt_image: https://raw.githubusercontent.com/iloveliterature/iloveliterature.github.io/refs/heads/master/assets/images/%EC%96%B4%EB%8A%90_%EB%B0%A4.jpeg
+tags: [여성, 돌봄]
+---
 
-Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu.
+<div style="display: flex; ">
+  <span style="text-align: left;"><strong>돌봄의 낭만화를 벗어던지는 문학</strong></span> </div> <br>
+<div style="display: flex; justify-content: flex-end;"> <span>민선혜</span></div> <br>
 
-Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
+엄마의 얼굴은 점점 더 크게 부풀어 올랐다. 이내 얼굴만이 아니라 몸도 부불펐다. 나는 풍선에 누가 펌프로 바람을 넣는 것처럼 점점 커다래지는 엄마의 얼굴과 몸을 바라봤다. 휠체어도 함께 커다래졌다. 곧 서 있는 나의 눈높이와 휠체어에 앉은 엄마의 눈높이가 비슷해졌다. 엄마가 나를 정면으로 마주 보고 있었다. 나는 비이상적으로 커진 엄마의 두 눈에 담긴 날 향한 결명을 결딜 수가 없었다.(240면)
+<br>
+최근 발표된 이종산의 「커튼 아래 발」(『빈 쇼핑백에 들어 있는 것』, 은행나무 2022)은 돌봄이 발생하는 공간을 섬세한 필치로 그려낸다. 주목할 점은 소설에서 재현된 돌봄의 공간이 ‘비윤리적’이라는 것이다. 치매에 걸린 노모를 돌보는 중년 여성 화자는 어느날부터 집안 곳곳 문 대신 설치된 커튼 아래 에 있는 발을 보게 된다. 커튼을 젖히면 금방이라도 낯선 무언가가 튀어나올 것만 같은 긴장과 공포의 공간. 그곳에서 화자는 거동이 불편한 노모를 돌본다. 무엇보다 공포스러운 것은 낯선 무언가가 삶에 침투했다는 징후를 알아차리면서도 그 ‘발’이 당장의 생활에 큰 위협을 가하지 않는다는 이유로 어떠한 조치도 취하지 않는 것이다. 오로지 화자의 눈에만 보이는 커튼 아래에 있는 발도, 혼자서 감당해야 하는 돌봄도, 집 안을 팽팽하게 채운 엄마와의 불화도 더이상 견딜 수 없을 때 화자는 애써 마주하지 않으려 했던 것들을 마주하게 된다. 이종산의 소설에서 내내 어긋나던 딸과 노모의 눈높 이가 같아지는 때는 분노와 증오, 혐오와 긴장의 순간이다. 화자는 이 눈맞춤 끝에 결국 노모를 살해한다.[^1])
 
-## Another great heading (h2)
+<br><br><br><br>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit.
 
-### Some great subheading (h3)
-
-Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum.
-
-Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc.
-
-### Some great subheading (h3)
-
-Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
-
-> This quote will change your life. It will reveal the secrets of the universe, and all the wonders of humanity. Don't misuse it.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt.
-
-### Some great subheading (h3)
-
-Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum.
-
-```html
-<html>
-  <head> </head>
-  <body>
-    <p>Hello, World!</p>
-  </body>
-</html>
-```
-
-In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris.
-
-#### You might want a sub-subheading (h4)
-
-In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris.
-
-In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris.
-
-#### But it's probably overkill (h4)
-
-In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris.
-
-### Oh hai, an unordered list!!
-
-In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris.
-
-- First item, yo
-- Second item, dawg
-- Third item, what what?!
-- Fourth item, fo sheezy my neezy
-
-### Oh hai, an ordered list!!
-
-In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris.
-
-1. First item, yo
-2. Second item, dawg
-3. Third item, what what?!
-4. Fourth item, fo sheezy my neezy
-
-## Headings are cool! (h2)
-
-Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
-
-Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
-
-Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc.
-
-### Tables
-
-| Title 1               | Title 2               | Title 3               | Title 4               |
-| --------------------- | --------------------- | --------------------- | --------------------- |
-| lorem                 | lorem ipsum           | lorem ipsum dolor     | lorem ipsum dolor sit |
-| lorem ipsum dolor sit | lorem ipsum dolor sit | lorem ipsum dolor sit | lorem ipsum dolor sit |
-| lorem ipsum dolor sit | lorem ipsum dolor sit | lorem ipsum dolor sit | lorem ipsum dolor sit |
-| lorem ipsum dolor sit | lorem ipsum dolor sit | lorem ipsum dolor sit | lorem ipsum dolor sit |
-
-| Title 1                    | Title 2                                | Title 3                    | Title 4                                |
-| -------------------------- | -------------------------------------- | -------------------------- | -------------------------------------- |
-| lorem                      | lorem ipsum                            | lorem ipsum dolor          | lorem ipsum dolor sit                  |
-| lorem ipsum dolor sit amet | lorem ipsum dolor sit amet consectetur | lorem ipsum dolor sit amet | lorem ipsum dolor sit                  |
-| lorem ipsum dolor          | lorem ipsum                            | lorem                      | lorem ipsum                            |
-| lorem ipsum dolor          | lorem ipsum dolor sit                  | lorem ipsum dolor sit amet | lorem ipsum dolor sit amet consectetur |
+[^1]: 관련 연구에 따르면, 실제로 간병살인의 범행 결심 사유에는 ‘다툼에 따른 순간적 분노’가 38.9% 로 가장 많이 집계된다. 유영규 외 『간병살인, 154인의 고백』, 루아크 2019, 27면.

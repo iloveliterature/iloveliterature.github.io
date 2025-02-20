@@ -256,3 +256,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-spaceship
+  
+jekyll-toc:
+  enabled: false

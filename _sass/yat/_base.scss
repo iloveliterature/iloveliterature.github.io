@@ -42,7 +42,11 @@ body {
   margin: 0 auto; /* 가운데 정렬 */
 }
 
-
+  p {
+  max-width: 800px; /* 본문 폭 제한 */
+  margin: auto;
+  text-align: justify; /* 양쪽 맞춤 */
+}
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */

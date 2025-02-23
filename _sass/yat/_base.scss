@@ -36,8 +36,15 @@ body {
   min-height: 100vh;
   flex-direction: column;
   transition-duration: $base-transition-duration;
+  line-height: 1.8; /* 줄 간격 */
+  letter-spacing: 0.05em; /* 자간 */
 }
 
+p {
+  max-width: 800px; /* 본문 폭 제한 */
+  margin: auto;
+  text-align: justify; /* 양쪽 맞춤 */
+}
 
 
 /**

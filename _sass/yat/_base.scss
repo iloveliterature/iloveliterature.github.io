@@ -21,7 +21,7 @@ h1 {
 body {
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: $base-font-weight;
-  font-size: 18px;
+  font-size: 17px;
   font-display: swap;
   line-height: #{$base-line-height};
   color: $text-color;
@@ -38,10 +38,10 @@ body {
   transition-duration: $base-transition-duration;
   line-height: 1.8; /* 줄 간격 */
   letter-spacing: 0.05em; /* 자간 */
+  max-width: 700px; /* 본문 폭 제한 */
 }
 
 p {
-  max-width: 800px; /* 본문 폭 제한 */
   margin: auto;
   text-align: justify; /* 양쪽 맞춤 */
 }

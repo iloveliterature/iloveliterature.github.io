@@ -39,12 +39,20 @@ body {
   margin: 0 auto; /* 가운데 정렬 */
 }
 
-  p, h3, img {
+  p, h3,  {
   max-width: 700px; /* 본문 폭 제한 */
   margin: auto;
   line-height: 1.8; /* 줄 간격 */
   letter-spacing: 0.05em; /* 자간 */
   text-align: justify; /* 양쪽 맞춤 */
+}
+
+img {
+  max-width: 700px; /* 본문 폭 제한 */
+  margin: auto;
+  line-height: 1.8; /* 줄 간격 */
+  letter-spacing: 0.05em; /* 자간 */
+  text-align: left
 }
 /**
  * Set `margin-bottom` to maintain vertical rhythm

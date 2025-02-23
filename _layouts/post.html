@@ -22,9 +22,9 @@ sidebar:
     {%- if banner == nil and result.size == 0 -%}
     {%- include views/post-header.html -%}
     {%- endif -%}
-    <div style="text-align: justify;">
+    
     {%- include views/article.html -%}
-    </div>
+    
     {%- assign result = hidden | where_exp: "item", "item == 'navigator'" -%}
     {%- if result.size == 0 -%}
     <div class="post-nav">

@@ -15,36 +15,42 @@ banner: "/assets/images/banners/home.jpeg"
   <title>My Site</title>
 
   <style>
-    .sidebar {
-      position: fixed;
-      left: -250px;
-      top: 0;
-      width: 250px;
-      height: 100%;
-      background: #222;
-      transition: 0.3s;
-      padding-top: 60px;
-    }
+  .sidebar {
+    position: fixed;
+    left: 15px;
+    top: 55px;
+    width: 200px;
+    background: #222;
+    border-radius: 8px;
 
-    .sidebar a {
-      display: block;
-      color: white;
-      padding: 15px;
-      text-decoration: none;
-    }
+    opacity: 0;
+    visibility: hidden;
 
-    .sidebar.active {
-      left: 0;
-    }
+    transition: 0.3s;
+    z-index: 9999;
+  }
 
-    #menu-btn {
-      position: fixed;
-      top: 15px;
-      left: 15px;
-      font-size: 24px;
-      z-index: 1000;
-    }
-  </style>
+  .sidebar a {
+    display: block;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+  }
+
+  .sidebar.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  #menu-btn {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    font-size: 24px;
+    z-index: 10000;
+    cursor: pointer;
+  }
+</style>
 </head>
 
 <body>

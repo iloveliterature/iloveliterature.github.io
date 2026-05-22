@@ -1,0 +1,73 @@
+<div class="menu-wrapper">
+  <button id="menu-btn">☰</button>
+
+  <div id="sidebar" class="sidebar">
+    <a href="{{ '/' | relative_url }}">Home</a>
+    <a href="{{ '/about.html' | relative_url }}">About</a>
+    <a href="{{ '/research.html' | relative_url }}">Research</a>
+  </div>
+</div>
+
+<style>
+.menu-wrapper {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 9999;
+}
+
+#menu-btn {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+  
+<style>
+.menu-wrapper {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 9999;
+}
+
+#menu-btn {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.sidebar {
+  margin-top: 10px;
+  width: 200px;
+
+  background: #222;
+  border-radius: 8px;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition: 0.3s;
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.sidebar.active {
+  opacity: 1;
+  visibility: visible;
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const btn = document.getElementById("menu-btn");
+  const sidebar = document.getElementById("sidebar");
+
+  btn.addEventListener("click", function () {
+    sidebar.classList.toggle("active");
+  });
+});
+</script>

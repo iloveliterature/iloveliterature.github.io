@@ -65,10 +65,10 @@ banner: "/assets/images/banners/home.jpeg"
   <button id="menu-btn">☰</button>
 
   <div id="sidebar" class="sidebar">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#research">Research</a>
-  </div>
+  <a href="{{ '/' | relative_url }}">Home</a>
+  <a href="{{ '/about.html' | relative_url }}">About</a>
+  <a href="{{ '/research.html' | relative_url }}">Research</a>
+</div>
 </div>
   <script>
     const btn = document.getElementById("menu-btn");

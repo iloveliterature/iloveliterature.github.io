@@ -17,35 +17,32 @@
 }
 
 #menu-btn {
+  width: 42px;
+  height: 42px;
   font-size: 24px;
   cursor: pointer;
-}
-
-  
-<style>
-.menu-wrapper {
-  position: fixed;
-  top: 15px;
-  left: 15px;
-  z-index: 9999;
-}
-
-#menu-btn {
-  font-size: 24px;
-  cursor: pointer;
+  border: none;
+  background: #222;
+  color: white;
+  border-radius: 6px;
 }
 
 .sidebar {
-  margin-top: 10px;
+  position: absolute;
+  top: 50px;
+  left: 0;
   width: 200px;
-
   background: #222;
   border-radius: 8px;
 
   opacity: 0;
   visibility: hidden;
+  transition: all 0.3s ease;
+}
 
-  transition: 0.3s;
+.sidebar.active {
+  opacity: 1;
+  visibility: visible;
 }
 
 .sidebar a {
@@ -55,9 +52,8 @@
   text-decoration: none;
 }
 
-.sidebar.active {
-  opacity: 1;
-  visibility: visible;
+.sidebar a:hover {
+  background: #333;
 }
 </style>
 
@@ -68,6 +64,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   btn.addEventListener("click", function () {
     sidebar.classList.toggle("active");
+
+    if (sidebar.classList.contains("active")) {
+      btn.textContent = "✕";
+    } else {
+      btn.textContent = "☰";
+    }
   });
 });
 </script>

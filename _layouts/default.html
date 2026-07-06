@@ -27,5 +27,22 @@
 
     {%- include views/footer.html -%}
 
+    <script>
+window.onload = function () {
+  const btn = document.getElementById("menu-btn");
+  const sidebar = document.getElementById("sidebar");
+
+  if (!btn || !sidebar) {
+    console.log("menu not found");
+    return;
+  }
+
+  btn.onclick = function () {
+    sidebar.classList.toggle("active");
+    btn.textContent = sidebar.classList.contains("active") ? "✕" : "☰";
+  };
+};
+</script>
+
   </body>
 </html>

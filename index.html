@@ -15,69 +15,11 @@ banner: "/assets/images/banners/home.jpeg"
   <title>My Site</title>
 
   <style>
-  .sidebar {
-    position: fixed;
-    left: 15px;
-    top: 55px;
-    width: 200px;
-    background: #222;
-    border-radius: 8px;
 
-    opacity: 0;
-    visibility: hidden;
-
-    transition: 0.3s;
-    z-index: 9999;
-  }
-
-  .sidebar a {
-    display: block;
-    color: white;
-    padding: 15px;
-    text-decoration: none;
-  }
-
-  .sidebar.active {
-    opacity: 1;
-    visibility: visible;
-  }
-
-  #menu-btn {
-    position: fixed;
-    top: 15px;
-    left: 15px;
-    font-size: 24px;
-    z-index: 10000;
-    cursor: pointer;
-  }
-    .menu-wrapper {
-  position: fixed;
-  top: 15px;
-  left: 15px;
-  z-index: 9999;
-}
 </style>
 </head>
 
 <body>
-
-  <div class="menu-wrapper">
-  <button id="menu-btn">☰</button>
-
-  <div id="sidebar" class="sidebar">
-  <a href="{{ '/' | relative_url }}">Home</a>
-  <a href="{{ '/about.html' | relative_url }}">About</a>
-  <a href="{{ '/research.html' | relative_url }}">Research</a>
-</div>
-</div>
-  <script>
-    const btn = document.getElementById("menu-btn");
-    const sidebar = document.getElementById("sidebar");
-
-    btn.addEventListener("click", () => {
-      sidebar.classList.toggle("active");
-    });
-  </script>
 
 </body>
 </html>

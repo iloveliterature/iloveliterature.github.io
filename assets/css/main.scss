@@ -81,6 +81,13 @@ $selection-background-color: unquote("{{ site.selection.background_color }}");
     opacity: 0.8;
   }
 }
+
+
+  img.logo-image {
+  display: none;
+}
+
+
 .site-nav a { font-family: 'Black Han Sans', sans-serif; }
 
 .subheading {

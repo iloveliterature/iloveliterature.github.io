@@ -7,6 +7,10 @@
 {% assign date_format = site.yat.date_format | default: "%b %-d, %Y" %}
 {% assign category = post.categories | first %}
 {% assign subcategory = post.subcategories | first %}
+
+<pre>{{ post | jsonify }}</pre>
+
+
 <div  class="post-meta">
   {{ post.date | date: date_format }}</span>
 <span class="post-categories left-vsplit"> {{ category }}</span> 

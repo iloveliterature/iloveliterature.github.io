@@ -19,7 +19,7 @@
 
     {%- if post.subcategories -%}
     {% assign subcategory = post.subcategories | first %}
-    <span class="post-subcategory left-vsplit"><i class='fa fa-book'></i> {{ subcategory }}</span>
+    <span class="post-subcategories left-vsplit"><i class='fa fa-book'></i> {{ subcategory }}</span>
     {%- endif -%}
 
     {% assign article = page.content %}

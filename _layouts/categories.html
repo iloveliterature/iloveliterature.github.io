@@ -2,15 +2,15 @@
 layout: framework
 sidebar: category-list
 ---
+<h2>월간리뷰</h2>
+{% assign items = site.posts | where: "categories", "월간리뷰" %}
 
-{%- if site.posts.size > 0 -%}
-
-  {%- include functions.html func='log' level='debug' msg='Get value' -%}
-  {%- include functions.html func='get_categories' -%}
-  {% assign categories = return %}
-
-  {% assign keys = categories %}
-  {% assign field = 'categories' %}
-  {%- include views/segments.html -%}
-
-{%- endif -%}
+<div class="page-segments">
+  <ul class="page-segments-list">
+    {% for item in items %}
+      <li>
+        {% include views/post-item.html item=item %}
+      </li>
+    {% endfor %}
+  </ul>
+</div>

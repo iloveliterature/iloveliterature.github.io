@@ -150,6 +150,12 @@ $selection-background-color: unquote("{{ site.selection.background_color }}");
   
 }
 
+@media (max-width: 768px) {
+  .post-meta {
+    display: flex;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .wrapper {
     width: 95%;

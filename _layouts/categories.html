@@ -2,15 +2,29 @@
 layout: framework
 sidebar: category-list
 ---
-<h2>월간리뷰</h2>
 {% assign items = site.posts | where: "categories", "월간리뷰" %}
+
+{% assign keys = "" | split: "" %}
+
+{% for item in items %}
+  {% unless keys contains item.subcategories %}
+    {% assign keys = keys | push: item.subcategories %}
+  {% endunless %}
+{% endfor %}
 
 <div class="page-segments">
   <ul class="page-segments-list">
-    {% for item in items %}
-      <li>
-        {% include views/post-item.html item=item %}
-      </li>
+    {% for key in keys %}
+      <h2 class="segment-name">{{ key }}</h2>
+
+      {% for item in items %}
+        {% if item.subcategories == key %}
+          <li>
+            {% include views/post-item.html item=item %}
+          </li>
+        {% endif %}
+      {% endfor %}
+
     {% endfor %}
   </ul>
 </div>

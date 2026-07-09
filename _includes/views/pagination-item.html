@@ -45,8 +45,7 @@
     {%- endif -%}
     
     {%- if post.subcategories -%}
-    {% assign subcategory = post.subcategories | first %}
-    <span class="post-subcategories left-vsplit"><i class='fa fa-book'></i> {{ subcategory }}</span>
+    <span class="post-subcategories left-vsplit"><i class='fa fa-book'></i> {{ post.subcategories }}</span>
     {%- endif -%}
     
   </div>

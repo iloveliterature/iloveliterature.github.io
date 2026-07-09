@@ -150,6 +150,50 @@ $selection-background-color: unquote("{{ site.selection.background_color }}");
   
 }
 
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 95%;
+    padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+.site-header-inner{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo-image{
+    height:45px;
+}
+
+.btn-search{
+    margin-left:auto;
+}
+
+}
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
 @import "yat";
 // main.scss 또는 기본 SCSS 파일에 추가
 @import 'overlay';
